@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <Ontology rdf:about="https://w3id.org/games/spec/asteroids#">
+        <rdfs:label xml:lang="en">Asteroids Ontology</rdfs:label>
+        <terms:created rdf:datatype="&xsd;date">02-13-2015</terms:created>
+        <versionInfo rdf:datatype="&xsd;decimal">1.0</versionInfo>
+        <vann:preferredNamespacePrefix>asteroids</vann:preferredNamespacePrefix>
+        <terms:title xml:lang="en">Asteroids Videogame Ontology</terms:title>
+        <rdfs:comment xml:lang="en">Extension of the video game ontology to represent the main concepts of the game Asteroids</rdfs:comment>
+        <terms:description xml:lang="en">Extension of the video game ontology to represent the main concepts of the game Asteroids</terms:description>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/"/>
+        <terms:contributor rdf:resource="http://delicias.dia.fi.upm.es/members/DGarijo/#me"/>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/games/spec/asteroids#"/>
+        <terms:creator rdf:resource="http://www.mendeley.com/profiles/janne-parkkila/"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Achievement -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Achievement"/>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Completion -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Completion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Fandom -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Fandom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#GameEvent -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#GameEvent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Genre -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Genre"/>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#InstantaneousEvent -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#SpecialPlayStyle -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#SpecialPlayStyle">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Tutorial -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Tutorial">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/asteroids#Arcade -->
+
+    <Class rdf:about="https://w3id.org/games/spec/asteroids#Arcade">
+        <rdfs:label xml:lang="en">Arcade</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Genre"/>
+        <rdfs:comment xml:lang="en">An arcade type of game</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/asteroids#Asteroids_Game_Over -->
+
+    <Class rdf:about="https://w3id.org/games/spec/asteroids#Asteroids_Game_Over">
+        <rdfs:label>Game Over</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#GameEvent"/>
+        <rdfs:comment xml:lang="en">Game over event</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/asteroids#Asteroids_Player_Dies -->
+
+    <Class rdf:about="https://w3id.org/games/spec/asteroids#Asteroids_Player_Dies">
+        <rdfs:label>Player Dies</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#GameEvent"/>
+        <rdfs:comment xml:lang="en">An event of player losing a ship in the game</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/asteroids#Asteroids_Start_New_Game -->
+
+    <Class rdf:about="https://w3id.org/games/spec/asteroids#Asteroids_Start_New_Game">
+        <rdfs:label>Start New Game</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#GameEvent"/>
+        <rdfs:comment xml:lang="en">An event of player starting a new game of Asteroids</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/asteroids#Destory_First_Asteroid -->
+
+    <Class rdf:about="https://w3id.org/games/spec/asteroids#Destory_First_Asteroid">
+        <rdfs:label>Destroy First Asteroid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Tutorial"/>
+        <rdfs:comment xml:lang="en">An achievement for destroying the first asteroid in the game</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/asteroids#Idler -->
+
+    <Class rdf:about="https://w3id.org/games/spec/asteroids#Idler">
+        <rdfs:label>Idler</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+        <rdfs:comment xml:lang="en">Achievement given from idling in the game for a certain amount of time</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/asteroids#New_Player -->
+
+    <Class rdf:about="https://w3id.org/games/spec/asteroids#New_Player">
+        <rdfs:label>New Player</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Tutorial"/>
+        <rdfs:comment xml:lang="en">Given when a new player starts the game.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/asteroids#Score_1000_Points -->
+
+    <Class rdf:about="https://w3id.org/games/spec/asteroids#Score_1000_Points">
+        <rdfs:label>Score 1000 Points</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">An achievement that is given for scoring 1000 points in the game</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/asteroids#Ten_Games_In_A_Row -->
+
+    <Class rdf:about="https://w3id.org/games/spec/asteroids#Ten_Games_In_A_Row">
+        <rdfs:label>10 Games in a Row</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Fandom"/>
+        <rdfs:comment xml:lang="en">An achievement given from playing 10 games in a row.</rdfs:comment>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,765 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <Ontology rdf:about="https://w3id.org/games/spec/browserquest#">
+        <rdfs:label xml:lang="en">Browser Quest Ontology</rdfs:label>
+        <terms:created rdf:datatype="&xsd;date">02-13-2015</terms:created>
+        <versionInfo rdf:datatype="&xsd;decimal">1.0</versionInfo>
+        <vann:preferredNamespacePrefix>browserquest</vann:preferredNamespacePrefix>
+        <terms:title xml:lang="en">Browser Quest Videogame Ontology</terms:title>
+        <rdfs:comment xml:lang="en">Extension of the video game ontology to represent the main concepts of the game Browser Quest</rdfs:comment>
+        <terms:description xml:lang="en">Extension of the video game ontology to represent the main concepts of the game Browser Quest</terms:description>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/"/>
+        <terms:contributor rdf:resource="http://delicias.dia.fi.upm.es/members/DGarijo/#me"/>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/games/spec/browserquest#"/>
+        <terms:creator rdf:resource="http://www.mendeley.com/profiles/janne-parkkila/"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Achievement -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Achievement"/>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Collection -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Collection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Completion -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Completion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Curiosity -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Curiosity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#GameEvent -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#GameEvent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Genre -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Genre"/>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#InstantaneousEvent -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#Item -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#Item"/>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#PlayerEvent -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#PlayerEvent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#InstantaneousEvent"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/net/VideoGameOntology#SpecialPlayStyle -->
+
+    <Class rdf:about="http://purl.org/net/VideoGameOntology#SpecialPlayStyle">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Achievement"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#A_True_Warrior -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#A_True_Warrior">
+        <rdfs:label xml:lang="en">A True Warrior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Collection"/>
+        <rdfs:comment xml:lang="en">A achievement given for finding a new weapon</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Angry_Rats -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Angry_Rats">
+        <rdfs:label xml:lang="en">Angry Rats</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">An achievement for killing 10 rats</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Armor -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Armor">
+        <rdfs:label xml:lang="en">Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Item"/>
+        <rdfs:comment xml:lang="en">An armor type of item</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Armor_Blue -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Armor_Blue">
+        <rdfs:label xml:lang="en">Blue Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A blue armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Armor_Cloth -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Armor_Cloth">
+        <rdfs:label xml:lang="en">Cloth Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A cloth armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Armor_Firefox -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Armor_Firefox">
+        <rdfs:label xml:lang="en">Firefox Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A firefox armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Armor_Golden -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Armor_Golden">
+        <rdfs:label xml:lang="en">Golden Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A golden armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Armor_Leather -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Armor_Leather">
+        <rdfs:label xml:lang="en">Leather Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A leather armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Armor_Mail -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Armor_Mail">
+        <rdfs:label xml:lang="en">Mail Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A mail armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Armor_Plate -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Armor_Plate">
+        <rdfs:label xml:lang="en">Plate Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A plate armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Armor_Red -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Armor_Red">
+        <rdfs:label xml:lang="en">Red Armor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Armor"/>
+        <rdfs:comment xml:lang="en">A red armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#At_Worlds_End -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#At_Worlds_End">
+        <rdfs:label xml:lang="en">At World&apos;s End</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">An achievement given for reaching the south shore</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Axe -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Axe">
+        <rdfs:label xml:lang="en">Axe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Weapon"/>
+        <rdfs:comment xml:lang="en">Axe</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Burger -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Burger">
+        <rdfs:label xml:lang="en">Burger</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Food"/>
+        <rdfs:comment xml:lang="en">A burger to eat</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Cake -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Cake">
+        <rdfs:label xml:lang="en">Cake</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Food"/>
+        <rdfs:comment xml:lang="en">An edible cake</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Chest -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Chest">
+        <rdfs:label xml:lang="en">Chest</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Treasure"/>
+        <rdfs:comment xml:lang="en">A treasure chest that can be opened</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Club -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Club">
+        <rdfs:label xml:lang="en">Club</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Weapon"/>
+        <rdfs:comment xml:lang="en">A club type of weapon</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Coward -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Coward">
+        <rdfs:label xml:lang="en">Coward</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+        <rdfs:comment xml:lang="en">An achievement given for succesfully escaping an enemy</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Fat_Loot -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Fat_Loot">
+        <rdfs:label xml:lang="en">Fat Loot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Collection"/>
+        <rdfs:comment xml:lang="en">An achievement given for getting a new set of armor</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Fire_Potion -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Fire_Potion">
+        <rdfs:label xml:lang="en">Fire Potion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Potion"/>
+        <rdfs:comment xml:lang="en">A fire potion</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Flask -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Flask">
+        <rdfs:label xml:lang="en">Flask</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Potion"/>
+        <rdfs:comment xml:lang="en">A flask item</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Food -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Food">
+        <rdfs:label xml:lang="en">Food</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Item"/>
+        <rdfs:comment xml:lang="en">Consumable Food Item</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#For_Science -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#For_Science">
+        <rdfs:label xml:lang="en">For Science</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <rdfs:comment xml:lang="en">Achievement given for entering into a portal</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Foxy -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Foxy">
+        <rdfs:label xml:lang="en">Foxy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <rdfs:comment xml:lang="en">Achievement given for finding the Firefox costume</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Hero -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Hero">
+        <rdfs:label xml:lang="en">Hero</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">An achievement given for defeating the final boss</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Hot_Spot -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Hot_Spot">
+        <rdfs:label xml:lang="en">Hot Spot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">Achievement given for entering the volcanic mountains</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Hunter -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Hunter">
+        <rdfs:label xml:lang="en">Hunter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <rdfs:comment xml:lang="en">An achievement given for killing 50 enemies</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Into_The_Wild -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Into_The_Wild">
+        <rdfs:label xml:lang="en">Into the Wild</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <rdfs:comment xml:lang="en">Achievement given for venturing outside the village</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#KillEvent -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#KillEvent">
+        <rdfs:label xml:lang="en">Kill Event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#GameEvent"/>
+        <rdfs:comment xml:lang="en">An event of killing something</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Kill_Bat -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Kill_Bat">
+        <rdfs:label xml:lang="en">Kill Bat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a bat</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Kill_Boss -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Kill_Boss">
+        <rdfs:label xml:lang="en">Kill Boss</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill the final boss</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Kill_Crab -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Kill_Crab">
+        <rdfs:label xml:lang="en">Kill Crab</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a crab</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Kill_Death_Knight -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Kill_Death_Knight">
+        <rdfs:label xml:lang="en">Kill Death Knight</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a Death Knight</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Kill_Eye -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Kill_Eye">
+        <rdfs:label xml:lang="en">Kill Eye</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill an Eye</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Kill_Goblin -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Kill_Goblin">
+        <rdfs:label xml:lang="en">Kill Goblin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a Goblin</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Kill_Ogre -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Kill_Ogre">
+        <rdfs:label xml:lang="en">Kill Ogre</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill an Ogre</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Kill_Rat -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Kill_Rat">
+        <rdfs:label xml:lang="en">Kill Rat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a Rat</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Kill_Skeleton -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Kill_Skeleton">
+        <rdfs:label xml:lang="en">Kill Skeleton</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a Skeleton</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Kill_Skeleton_2 -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Kill_Skeleton_2">
+        <rdfs:label xml:lang="en">Kill Skeleton 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a skeletong of type 2</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Kill_Snake -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Kill_Snake">
+        <rdfs:label xml:lang="en">Kill Snake</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a Snake</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Kill_Spectre -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Kill_Spectre">
+        <rdfs:label xml:lang="en">Kill Spectre</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a Spectre</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Kill_Wizard -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Kill_Wizard">
+        <rdfs:label xml:lang="en">Kill Wizard</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#KillEvent"/>
+        <rdfs:comment xml:lang="en">Kill a Wizard</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Meatshield -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Meatshield">
+        <rdfs:label xml:lang="en">Meatshield</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+        <rdfs:comment xml:lang="en">Achievement given for receiving 5 000 points of damage</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Ninja_Loot -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Ninja_Loot">
+        <rdfs:label xml:lang="en">Ninja Loot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <rdfs:comment xml:lang="en">Achievement given for getting hold of loot you didn&apos;t fight for</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#No_Mans_Land -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#No_Mans_Land">
+        <rdfs:label xml:lang="en">No Man&apos;s Land</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">Achievement given for travelling through the desert</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Player_Clicked_Asteroids_Link -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Player_Clicked_Asteroids_Link">
+        <rdfs:label xml:lang="en">Player Clicked Asteroid&apos;s Link</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#PlayerEvent"/>
+        <rdfs:comment xml:lang="en">An event of player clicking a link to the Asteroids game</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Potion -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Potion">
+        <rdfs:label xml:lang="en">Potion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Item"/>
+        <rdfs:comment xml:lang="en">A potable potion item</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#RPG -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#RPG">
+        <rdfs:label xml:lang="en">RPG</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Genre"/>
+        <rdfs:comment xml:lang="en">A Role-playing Game Genre</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Rickrolld -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Rickrolld">
+        <rdfs:label xml:lang="en">RickRoll&apos;d</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#SpecialPlayStyle"/>
+        <rdfs:comment xml:lang="en">Achievement given for taking some singing lessons</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Skull_Collector -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Skull_Collector">
+        <rdfs:label xml:lang="en">Skull Collector</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Collection"/>
+        <rdfs:comment xml:lang="en">An achievement given for killing 10 skeletons</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Small_Talk -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Small_Talk">
+        <rdfs:label xml:lang="en">Small Talk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <rdfs:comment xml:lang="en">Achievement given for talking to a non-player character</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Still_Alive -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Still_Alive">
+        <rdfs:label xml:lang="en">Still Alive</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">An achievement given for reviving yourself five times</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Sword -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Sword">
+        <rdfs:label xml:lang="en">Sword</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Weapon"/>
+        <rdfs:comment xml:lang="en">A sword type of item</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Sword_Blue -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Sword_Blue">
+        <rdfs:label xml:lang="en">Blue Sword</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Sword"/>
+        <rdfs:comment xml:lang="en">A blue sword</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Sword_Golden -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Sword_Golden">
+        <rdfs:label xml:lang="en">Golden Sword</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Sword"/>
+        <rdfs:comment xml:lang="en">A golden sword</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Tomb_Raider -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Tomb_Raider">
+        <rdfs:label xml:lang="en">Tomb Raider</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Completion"/>
+        <rdfs:comment xml:lang="en">An achievement given for finding the graveyard</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Treasure -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Treasure">
+        <rdfs:label xml:lang="en">Treasure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Item"/>
+        <rdfs:comment xml:lang="en">A treasure that can be found in the game</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Underground -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Underground">
+        <rdfs:label xml:lang="en">Underground</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Curiosity"/>
+        <rdfs:comment xml:lang="en">An achievement given for exploring a cave</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Weapon -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Weapon">
+        <rdfs:label xml:lang="en">Weapon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/VideoGameOntology#Item"/>
+        <rdfs:comment xml:lang="en">A weapon type of item</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Weapon_Axe -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Weapon_Axe">
+        <rdfs:label xml:lang="en">Basic Axe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Axe"/>
+        <rdfs:comment xml:lang="en">A basic axe</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Weapon_Morningstar -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Weapon_Morningstar">
+        <rdfs:label xml:lang="en">Morningstar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Club"/>
+        <rdfs:comment xml:lang="en">A morningstar weapon</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Weapon_Red_Sword -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Weapon_Red_Sword">
+        <rdfs:label xml:lang="en">Red Sword</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Sword"/>
+        <rdfs:comment xml:lang="en">A red sword</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Weapon_Sword_1 -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Weapon_Sword_1">
+        <rdfs:label xml:lang="en">Sword 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Sword"/>
+        <rdfs:comment xml:lang="en">A sword of type 1</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/games/spec/browserquest#Weapon_Sword_2 -->
+
+    <Class rdf:about="https://w3id.org/games/spec/browserquest#Weapon_Sword_2">
+        <rdfs:label xml:lang="en">Sword 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/games/spec/browserquest#Sword"/>
+        <rdfs:comment xml:lang="en">A second type of sword</rdfs:comment>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
