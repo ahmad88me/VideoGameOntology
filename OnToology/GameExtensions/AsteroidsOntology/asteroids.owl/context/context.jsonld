@@ -1,0 +1,88 @@
+{
+  "@context" : {
+    "Achievement" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#Achievement"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Tutorial" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#Tutorial"
+    },
+    "Idler" : {
+      "@id" : "https://w3id.org/games/spec/asteroids#Idler"
+    },
+    "New_Player" : {
+      "@id" : "https://w3id.org/games/spec/asteroids#New_Player"
+    },
+    "Ten_Games_In_A_Row" : {
+      "@id" : "https://w3id.org/games/spec/asteroids#Ten_Games_In_A_Row"
+    },
+    "Score_1000_Points" : {
+      "@id" : "https://w3id.org/games/spec/asteroids#Score_1000_Points"
+    },
+    "Destory_First_Asteroid" : {
+      "@id" : "https://w3id.org/games/spec/asteroids#Destory_First_Asteroid"
+    },
+    "Asteroids_Player_Dies" : {
+      "@id" : "https://w3id.org/games/spec/asteroids#Asteroids_Player_Dies"
+    },
+    "Asteroids_Game_Over" : {
+      "@id" : "https://w3id.org/games/spec/asteroids#Asteroids_Game_Over"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Completion" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#Completion"
+    },
+    "Fandom" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#Fandom"
+    },
+    "GameEvent" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#GameEvent"
+    },
+    "Arcade" : {
+      "@id" : "https://w3id.org/games/spec/asteroids#Arcade"
+    },
+    "SpecialPlayStyle" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#SpecialPlayStyle"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Asteroids_Start_New_Game" : {
+      "@id" : "https://w3id.org/games/spec/asteroids#Asteroids_Start_New_Game"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "InstantaneousEvent" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#InstantaneousEvent"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Genre" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#Genre"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  }
+}
