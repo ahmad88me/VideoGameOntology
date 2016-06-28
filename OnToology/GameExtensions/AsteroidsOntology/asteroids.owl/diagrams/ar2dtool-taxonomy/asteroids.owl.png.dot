@@ -1,0 +1,20 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://purl.org/net/VideoGameOntology#GameEvent" "http://purl.org/net/VideoGameOntology#Achievement" "http://purl.org/net/VideoGameOntology#Tutorial" "asteroids:Asteroids_Player_Dies" "asteroids:Asteroids_Start_New_Game" "http://purl.org/net/VideoGameOntology#Completion" "asteroids:Asteroids_Game_Over" "asteroids:Destory_First_Asteroid" "asteroids:Ten_Games_In_A_Row" "asteroids:Score_1000_Points" "http://purl.org/net/VideoGameOntology#InstantaneousEvent" "http://purl.org/net/VideoGameOntology#Genre" "http://purl.org/net/VideoGameOntology#SpecialPlayStyle" "asteroids:New_Player" "asteroids:Idler" "asteroids:Arcade" "http://purl.org/net/VideoGameOntology#Fandom" ; /*classes style*/
+	"http://purl.org/net/VideoGameOntology#Tutorial" -> "http://purl.org/net/VideoGameOntology#Achievement" [ label = "rdfs:subClassOf" ];
+	"asteroids:Score_1000_Points" -> "http://purl.org/net/VideoGameOntology#Completion" [ label = "rdfs:subClassOf" ];
+	"asteroids:Asteroids_Game_Over" -> "http://purl.org/net/VideoGameOntology#GameEvent" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/net/VideoGameOntology#SpecialPlayStyle" -> "http://purl.org/net/VideoGameOntology#Achievement" [ label = "rdfs:subClassOf" ];
+	"asteroids:Asteroids_Player_Dies" -> "http://purl.org/net/VideoGameOntology#GameEvent" [ label = "rdfs:subClassOf" ];
+	"asteroids:New_Player" -> "http://purl.org/net/VideoGameOntology#Tutorial" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/net/VideoGameOntology#GameEvent" -> "http://purl.org/net/VideoGameOntology#InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"asteroids:Asteroids_Start_New_Game" -> "http://purl.org/net/VideoGameOntology#GameEvent" [ label = "rdfs:subClassOf" ];
+	"asteroids:Arcade" -> "http://purl.org/net/VideoGameOntology#Genre" [ label = "rdfs:subClassOf" ];
+	"asteroids:Destory_First_Asteroid" -> "http://purl.org/net/VideoGameOntology#Tutorial" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/net/VideoGameOntology#Fandom" -> "http://purl.org/net/VideoGameOntology#Achievement" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/net/VideoGameOntology#Completion" -> "http://purl.org/net/VideoGameOntology#Achievement" [ label = "rdfs:subClassOf" ];
+	"asteroids:Idler" -> "http://purl.org/net/VideoGameOntology#SpecialPlayStyle" [ label = "rdfs:subClassOf" ];
+	"asteroids:Ten_Games_In_A_Row" -> "http://purl.org/net/VideoGameOntology#Fandom" [ label = "rdfs:subClassOf" ];
+
+}

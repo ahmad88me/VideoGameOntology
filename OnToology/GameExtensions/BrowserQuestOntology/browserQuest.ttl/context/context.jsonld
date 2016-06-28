@@ -1,0 +1,259 @@
+{
+  "@context" : {
+    "Weapon_Axe" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Weapon_Axe"
+    },
+    "Small_Talk" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Small_Talk"
+    },
+    "Achievement" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#Achievement"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "Armor_Leather" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Armor_Leather"
+    },
+    "Angry_Rats" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Angry_Rats"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Tomb_Raider" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Tomb_Raider"
+    },
+    "Armor_Red" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Armor_Red"
+    },
+    "At_Worlds_End" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#At_Worlds_End"
+    },
+    "Food" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Food"
+    },
+    "Armor_Blue" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Armor_Blue"
+    },
+    "A_True_Warrior" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#A_True_Warrior"
+    },
+    "Kill_Wizard" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Kill_Wizard"
+    },
+    "Chest" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Chest"
+    },
+    "Hero" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Hero"
+    },
+    "Weapon_Red_Sword" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Weapon_Red_Sword"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Burger" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Burger"
+    },
+    "Rickrolld" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Rickrolld"
+    },
+    "Ninja_Loot" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Ninja_Loot"
+    },
+    "Completion" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#Completion"
+    },
+    "Weapon" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Weapon"
+    },
+    "Kill_Skeleton_2" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Kill_Skeleton_2"
+    },
+    "Armor_Mail" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Armor_Mail"
+    },
+    "Kill_Ogre" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Kill_Ogre"
+    },
+    "GameEvent" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#GameEvent"
+    },
+    "Kill_Goblin" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Kill_Goblin"
+    },
+    "SpecialPlayStyle" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#SpecialPlayStyle"
+    },
+    "Armor_Cloth" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Armor_Cloth"
+    },
+    "For_Science" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#For_Science"
+    },
+    "Kill_Crab" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Kill_Crab"
+    },
+    "Kill_Eye" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Kill_Eye"
+    },
+    "Kill_Snake" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Kill_Snake"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "Armor_Plate" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Armor_Plate"
+    },
+    "Kill_Bat" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Kill_Bat"
+    },
+    "Axe" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Axe"
+    },
+    "Armor_Golden" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Armor_Golden"
+    },
+    "Armor_Firefox" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Armor_Firefox"
+    },
+    "Into_The_Wild" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Into_The_Wild"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Cake" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Cake"
+    },
+    "Weapon_Sword_1" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Weapon_Sword_1"
+    },
+    "Kill_Spectre" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Kill_Spectre"
+    },
+    "Hunter" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Hunter"
+    },
+    "Underground" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Underground"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "Skull_Collector" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Skull_Collector"
+    },
+    "Armor" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Armor"
+    },
+    "Weapon_Morningstar" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Weapon_Morningstar"
+    },
+    "PlayerEvent" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#PlayerEvent"
+    },
+    "Meatshield" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Meatshield"
+    },
+    "Kill_Boss" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Kill_Boss"
+    },
+    "Kill_Skeleton" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Kill_Skeleton"
+    },
+    "Kill_Death_Knight" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Kill_Death_Knight"
+    },
+    "Treasure" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Treasure"
+    },
+    "Fire_Potion" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Fire_Potion"
+    },
+    "Still_Alive" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Still_Alive"
+    },
+    "Fat_Loot" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Fat_Loot"
+    },
+    "InstantaneousEvent" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#InstantaneousEvent"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Hot_Spot" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Hot_Spot"
+    },
+    "Genre" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#Genre"
+    },
+    "Club" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Club"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "Sword_Blue" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Sword_Blue"
+    },
+    "Weapon_Sword_2" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Weapon_Sword_2"
+    },
+    "KillEvent" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#KillEvent"
+    },
+    "Item" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#Item"
+    },
+    "Foxy" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Foxy"
+    },
+    "Kill_Rat" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Kill_Rat"
+    },
+    "No_Mans_Land" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#No_Mans_Land"
+    },
+    "Sword_Golden" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Sword_Golden"
+    },
+    "Coward" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Coward"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "Curiosity" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#Curiosity"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "Sword" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Sword"
+    },
+    "RPG" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#RPG"
+    },
+    "Player_Clicked_Asteroids_Link" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Player_Clicked_Asteroids_Link"
+    },
+    "Collection" : {
+      "@id" : "http://purl.org/net/VideoGameOntology#Collection"
+    },
+    "Potion" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Potion"
+    },
+    "Flask" : {
+      "@id" : "https://w3id.org/games/spec/browserquest#Flask"
+    }
+  }
+}
